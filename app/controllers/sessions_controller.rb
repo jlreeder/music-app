@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     email, password = session_params.values
     @user = User.find_by_credentials(email, password)
     if @user && @user.save
+      log_in!(@user)
       render text: "Success"
     else
       render text: "Failure"
