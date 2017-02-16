@@ -35,8 +35,18 @@
      CLOSED: [2017-02-16 Thu 15:03]
 **** DONE Album
      CLOSED: [2017-02-16 Thu 15:05]
+**** DONE Track
+     CLOSED: [2017-02-16 Thu 15:18]
+*** Update / Edit
+**** DONE Band
+     CLOSED: [2017-02-16 Thu 15:36]
+**** Album
 **** Track
-*** Create
+*** Destroy
+**** Band
+**** Album
+**** Track
+*** Up / Down
 **** Band
 **** Album
 **** Track

@@ -9,5 +9,26 @@ class BandsController < ApplicationController
     render :show
   end
 
+  def edit
+    @band = Band.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @band = Band.find(params[:id])
+    @band.update(band_params)
+    if @band.save
+      render :show
+    else
+      render text: "Failure"
+    end
+  end
+
   def new; end
+
+  private
+
+  def band_params
+    params.require(:band).permit(:name)
+  end
 end
