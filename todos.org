@@ -4,7 +4,8 @@
 *** Band
 *** Album
 *** Track
-** Validations
+** DONE Validations
+   CLOSED: [2017-02-16 Thu 13:47]
 *** DONE Band
     CLOSED: [2017-02-16 Thu 13:44]
 *** DONE Album
@@ -12,9 +13,16 @@
 *** DONE Track
     CLOSED: [2017-02-16 Thu 13:46]
 ** Associations
-*** Band
-*** Album
-*** Track
+*** First level
+**** DONE Band
+     CLOSED: [2017-02-16 Thu 13:54]
+**** DONE Album
+     CLOSED: [2017-02-16 Thu 13:54]
+**** Track
+*** Through
+**** Band
+**** Album
+**** Track
 ** Routes
 *** Band
 *** Album
