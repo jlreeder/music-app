@@ -12,6 +12,11 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    log_out!(current_user)
+    render text: "Success"
+  end
+
   private
 
   def session_params
