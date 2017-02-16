@@ -15,4 +15,13 @@ class Track < ActiveRecord::Base
   validates :name, :album_id, :track_type, :lyrics, presence: true
 
   belongs_to :album
+
+  def album_name
+    self.album.name
+  end
+
+  def band_name
+    self.album.band_name
+  end
+
 end
