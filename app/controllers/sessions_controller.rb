@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     @user = User.find_by_credentials(email, password)
     if @user && @user.save
       log_in!(@user)
-      render text: "Success"
+      redirect_to user_url(@user)
     else
       render text: "Failure"
     end
