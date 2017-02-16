@@ -13,6 +13,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = User.find(params[:id])
+    render text: @user.email
+  end
+
   private
 
   def user_params
