@@ -11,4 +11,5 @@
 #
 
 class Album < ActiveRecord::Base
+  validates :name, :band_id, :recording_type, presence: true
 end
