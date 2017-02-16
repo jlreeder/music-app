@@ -11,4 +11,33 @@
 #
 
 class User < ActiveRecord::Base
+  validates :email, :password_digest, :session_token, presence: true
+  validates :email, uniqueness: true
+
+  attr_reader :password
+
+  after_initialize :ensure_session_token
+
+  def self.generate_session_token
+    SecureRandom::urlsafe_base64(16)
+  end
+
+  def reset_session_token!
+    self.session_token = User.generate_session_token
+    self.save
+  end
+
+  def ensure_session_token
+    self.session_token ||= User.generate_session_token
+    self.save
+  end
+
+  def password=(provided)
+    self.password_digest = BCrypt::Password.create(provided)
+  end
+
+  def is_password?(provided)
+    bc_pass = BCrypt::Password.new(self.password_digest)
+    bc_pass.is_password?(provided)
+  end
 end
