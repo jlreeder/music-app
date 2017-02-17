@@ -11,6 +11,8 @@ Album.destroy_all
 Track.destroy_all
 
 beatles = Band.create!(name: "The Beatles")
+nirvana = Band.create!(name: "Nirvana")
+zeppelin = Band.create!(name: "Led Zeppelin")
 abbey = Album.create!(name: "Abbey Road",
                       band_id: beatles.id,
                       recording_type: "studio")
