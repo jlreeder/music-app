@@ -33,3 +33,4 @@
     <br>
     <%= button_to "Submit Change", track_url %>
 </form>
+<%= button_to "Delete #{@track.name}", track_url, method: "delete" %>
