@@ -1,5 +1,6 @@
 <h1><%= @album.name %></h1>
 <h2><%= @album.band_name %></h2>
+<%= button_to "Back to #{@album.band_name}", band_url(@album.band_id), method: "get" %>
 <%= button_to "Edit", edit_album_url, method: "get" %>
 <h3>Tracks</h3>
 <ul>

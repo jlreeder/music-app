@@ -16,6 +16,9 @@ zeppelin = Band.create!(name: "Led Zeppelin")
 abbey = Album.create!(name: "Abbey Road",
                       band_id: beatles.id,
                       recording_type: "studio")
+apple = Album.create!(name: "Apple",
+                      band_id: beatles.id,
+                      recording_type: "studio")
 nevermind = Album.create!(name: "Nevermind",
                           band_id: nirvana.id,
                           recording_type: "studio")
