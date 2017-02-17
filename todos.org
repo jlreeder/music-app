@@ -44,10 +44,14 @@
       CLOSED: [2017-02-16 Thu 16:43]
 **** DONE Album
      CLOSED: [2017-02-16 Thu 15:53]
-***** Is there a button?
-***** Is there an album type?
-****** Is it allowed in the controller?
-**** Track
+***** DONE Is there a button?
+      CLOSED: [2017-02-16 Thu 17:09]
+***** DONE Is there an album type?
+      CLOSED: [2017-02-16 Thu 17:09]
+****** DONE Is it allowed in the controller?
+       CLOSED: [2017-02-16 Thu 17:09]
+**** DONE Track
+     CLOSED: [2017-02-16 Thu 17:00]
 *** Destroy
 **** Band
 **** Album

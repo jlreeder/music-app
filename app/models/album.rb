@@ -17,6 +17,8 @@ class Album < ActiveRecord::Base
 
   has_many :tracks, dependent: :destroy
 
+  RECORDING_TYPES = %w(studio live)
+
   def band_name
     self.band.name
   end
