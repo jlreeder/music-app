@@ -6,7 +6,7 @@
         name="authenticity_token"
         value="<%= form_authenticity_token%>">
     <label for="band[name]">
-        Name: <input type="string" name ="band[name]">
+        Name: <input type="string" name ="band[name]" value="<%= @band.name %>">
     </label>
     <br>
     <%= button_to "Submit Change", band_url %>
