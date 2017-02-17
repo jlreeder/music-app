@@ -40,9 +40,13 @@
 *** Update / Edit
 **** DONE Band
      CLOSED: [2017-02-16 Thu 15:36]
-***** Default values
+***** DONE Default values
+      CLOSED: [2017-02-16 Thu 16:43]
 **** DONE Album
      CLOSED: [2017-02-16 Thu 15:53]
+***** Is there a button?
+***** Is there an album type?
+****** Is it allowed in the controller?
 **** Track
 *** Destroy
 **** Band

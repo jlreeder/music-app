@@ -16,6 +16,8 @@ class Track < ActiveRecord::Base
 
   belongs_to :album
 
+  TRACK_TYPES = %w(bonus regular)
+
   def album_name
     self.album.name
   end
