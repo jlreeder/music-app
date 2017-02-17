@@ -53,8 +53,10 @@
 **** DONE Track
      CLOSED: [2017-02-16 Thu 17:00]
 *** Destroy
-**** Band
-**** Album
+**** DONE Band
+     CLOSED: [2017-02-16 Thu 17:24]
+**** DONE Album
+     CLOSED: [2017-02-16 Thu 17:26]
 **** Track
 *** Up / Down
 **** Band

@@ -32,3 +32,4 @@
     <br>
     <%= button_to "Submit change", album_url %>
 </form>
+<%= button_to "Delete #{@album.name}", album_url, method: "delete" %>
